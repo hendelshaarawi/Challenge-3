@@ -1,11 +1,85 @@
-  #map {
-        width: 90%;
-        margin: 0 auto;
-        height: 100%;
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,600');
+
+
+
+* {
+  font-family: 'nunito';
+  font-weight: 300;
+}
+
+
+ #map {
+     width: 95%;
+     margin: 0 auto;
+     height: 70vh;
+}
+
+ html, body {
+     height: 80vh;
+     margin: 0;
+     padding: 0;
+}
+ 
+ h1, h2 {
+  text-align: center;
+ }
+
+h1{
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+
+
+
+
+@media screen and (min-width: 758px) {
+      html {
+        background-color: red;
       }
-  
-      html, body {
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-      }
+  }
+
+
+
+
+@media only screen and (min-width: 1024px) {
+html {
+  background-color: blue;
+}
+
+ #map {
+     width: 90%;
+     margin: 0 auto;
+     height: 100%;
+}
+
+ html, body {
+     height: 80vh;
+     margin: 0;
+     padding: 0;
+}
+ 
+ h1, h2 {
+  text-align: center;
+ }
+
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1244px) {
+html {
+  background-color: green;
+}
+}
+
