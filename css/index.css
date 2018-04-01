@@ -1,85 +1,84 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,600');
-
-
-
-* {
-  font-family: 'nunito';
-  font-weight: 300;
+ * {
+     font-family: 'nunito';
+     font-weight: 300;
 }
-
-
  #map {
      width: 95%;
      margin: 0 auto;
      height: 70vh;
 }
-
  html, body {
      height: 80vh;
      margin: 0;
      padding: 0;
 }
- 
  h1, h2 {
-  text-align: center;
- }
-
-h1{
-  font-size: 30px;
+     text-align: center;
+}
+ h1{
+     font-size: 30px;
+}
+ h2 {
+     font-size: 20px;
+}
+ footer {
+     display: none;
 }
 
-h2 {
-  font-size: 20px;
+
+
+
+/*-----IPAD-----*/
+
+
+ @media screen and (min-width: 758px) {
+     #map {
+         width: 95%;
+         height: 80vh;
+    }
+     h1{
+         font-size: 40px;
+    }
+     h2 {
+         font-size: 25px;
+    }
 }
 
 
 
+/*-----DESKTOP SMALL-----*/
 
 
-@media screen and (min-width: 758px) {
-      html {
-        background-color: red;
-      }
-  }
-
-
-
-
-@media only screen and (min-width: 1024px) {
-html {
-  background-color: blue;
+ @media only screen and (min-width: 1024px) {
+     #map {
+         width: 95%;
+         height: 80vh;
+    }
+     h1{
+         font-size: 45px;
+    }
+     h2 {
+         font-size: 30px;
+    }
 }
 
- #map {
-     width: 90%;
-     margin: 0 auto;
-     height: 100%;
-}
 
- html, body {
-     height: 80vh;
-     margin: 0;
-     padding: 0;
+
+/*-----DESKTOP LARGE-----*/
+
+
+
+ @media only screen and (min-width: 1025px) {
+     #map {
+         width: 99%;
+         height: 65vh;
+    }
+     footer {
+         display: block;
+         font-size: 10px;
+         color: #969494;
+         text-align: center;
+    }
 }
  
- h1, h2 {
-  text-align: center;
- }
-
-}
-
-
-
-
-
-
-
-
-
-
-@media only screen and (min-width: 1244px) {
-html {
-  background-color: green;
-}
-}
-
