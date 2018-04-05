@@ -22,28 +22,19 @@
  h2 {
      font-size: 20px;
 }
-
-h3 {
-    font-size: 17px;
+ h3 {
+     font-size: 17px;
 }
-
  footer {
      display: none;
 }
-
  .gm-style-iw {
-      text-align: center;
-    }
-
+     text-align: center;
+}
  p {
-    font-size: 14px;
- }   
-
-
-
+     font-size: 14px;
+}
 /*-----IPAD-----*/
-
-
  @media screen and (min-width: 758px) {
      #map {
          width: 95%;
@@ -56,12 +47,7 @@ h3 {
          font-size: 25px;
     }
 }
-
-
-
 /*-----DESKTOP SMALL-----*/
-
-
  @media only screen and (min-width: 1024px) {
      #map {
          width: 95%;
@@ -74,17 +60,11 @@ h3 {
          font-size: 30px;
     }
 }
-
-
-
 /*-----DESKTOP LARGE-----*/
-
-
-
  @media only screen and (min-width: 1025px) {
      #map {
          width: 99%;
-         height: 65vh;
+         height: 70vh;
     }
      footer {
          display: block;
