@@ -111,8 +111,7 @@ var map;
       }
     };
 
-
-       var contentString = '<div id="content">' +
+ var contentString = '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
         '<h3 id="firstHeading" class="firstHeading">Havana, Cuba</h3>' +
@@ -129,7 +128,7 @@ var map;
         content: contentString
     });
 
- marker = new google.maps.Marker({
+    marker = new google.maps.Marker({
         map: map,
         draggable: true,
         animation: google.maps.Animation.DROP,
@@ -138,6 +137,20 @@ var map;
             lng: -82.409164
         }
     });
+    // marker.addListener('click', toggleBounce);
+
+    marker.addListener('click', function() {
+        infowindow.open(map, marker);
+    });
+
+    function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+            marker.setAnimation(null);
+        } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+    }
+
 
     // Custom marker zetten
     map.data.setStyle(function(feature) {
