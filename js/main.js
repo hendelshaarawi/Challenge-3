@@ -295,10 +295,45 @@ function getCircle(magnitude) {
 
     
 }
-
-
-
 function eqfeed_callback(results) {
     map.data.addGeoJson(results);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//               WEATHER                   // KEY=276d063af925739d0b65eb3f733bdf35
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
