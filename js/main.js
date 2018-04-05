@@ -10,10 +10,10 @@ var map;
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
-        //zoom: 5,
+        zoom: 6,
         center: {
-            lat: 22.15,
-            lng: -80.41388699999999
+            lat: 20.02472,
+            lng: -75.82194
         },
 
         mapTypeId: 'terrain',
@@ -98,9 +98,7 @@ function initMap() {
               elementType: 'labels.text.stroke',
               stylers: [{color: '#17263c'}]
             }
-          ],
-
-          zoom: 4,
+          ]
 
     });
 
