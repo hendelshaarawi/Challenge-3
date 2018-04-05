@@ -245,15 +245,51 @@ function initMap() {
 
   google.maps.event.addDomListener(window, 'load', initialize);
 
+    //José Martí International Airport, is een internationale luchthaven, gelegen op 15 km buiten de stad Havana in Cuba. Het is een hub voor verschillende Cubaanse luchtvaartmaatschappijen
+
+// '<div id="siteNotice">'+
+//             '</div>'+
+//             '<h3 id="firstHeading" class="firstHeading">Havana, Cuba</h3>'+
+//             '<div id="bodyContent">'+
+//             '<p><b>José Martí International Airport</b>, is een internationale luchthaven, gelegen op 15 km buiten de stad Havana in <b>Cuba</b>,  Het is een hub voor verschillende Cubaanse luchtvaartmaatschappijen' +
+//             +
+//             '<p>Attribution: Cuba, <a href="https://nl.wikipedia.org/wiki/Cuba_(land)"></a></p> '+
+//             '</div>'+
+ //           '</div>';
+
+//22.989166, -82.409164
+
+
+
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h3 id="firstHeading" class="firstHeading">Havana, Cuba</h3>'+
+            '<div id="bodyContent">'+
+            '<p><b>José Martí International Airport</b> is een internationale luchthaven, gelegen op 15 km buiten de stad Havana in <b>Cuba</b>. ' +
+            'Het is een hub voor verschillende Cubaanse luchtvaartmaatschappijen. </p>'+
+            
+            '<p>Attribution:  <a target="_blank" href="https://nl.wikipedia.org/wiki/Cuba_(land)">Cuba</a> '+ ' &#x1F1E8;&#x1F1FA; '+
+           
+            '(last visited June 22, 2009).</p>'+
+            '</div>'+
+            '</div>';
+       var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
      
     marker = new google.maps.Marker({
           map: map,
           draggable: true,
           animation: google.maps.Animation.DROP,
-          position: {lat: 23.113592,
-            lng: -82.366592}
+          position: {lat: 22.989166,
+            lng: -82.409164}
         });
-        marker.addListener('click', toggleBounce);
+       // marker.addListener('click', toggleBounce);
+
+         marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
 
          function toggleBounce() {
         if (marker.getAnimation() !== null) {
