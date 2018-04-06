@@ -289,14 +289,14 @@ var map;
     return feature;
   };
 
-  // Add the markers to the map
+  // Markers toevoegen
   var drawIcons = function (weather) {
      map.data.addGeoJson(geoJSON);
      // Set the flag to finished
      gettingData = false;
   };
 
-  // Clear data layer and geoJSON
+  
   var resetData = function () {
     geoJSON = {
       type: "FeatureCollection",
